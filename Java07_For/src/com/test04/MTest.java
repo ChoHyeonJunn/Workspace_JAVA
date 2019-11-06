@@ -5,10 +5,13 @@ public class MTest {
 	public static void main(String[] args) {
 		StarPrn star = new StarPrn();
 		
-		star.prn01();
-		star.prn02();
-		star.prn03();
-		star.prn04();
-		star.prn05();
+		for (int i = 0; i < 3; i++) {
+			star.prn02();
+			star.prn03();
+			star.prn05();
+			star.prn06();
+			star.prn04();
+			star.prn01();
+		}
 	}
 }
