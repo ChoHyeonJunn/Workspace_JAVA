@@ -25,6 +25,12 @@ public class LeapYear {
 		// 윤년이면 true
 		// 윤년아니면 false
 
+		//이렇게도 가능!!
+//		if ((year % 4 == 0) && (year % 100 != 0) || (year % 400 == 0))
+//			return true;
+//		else
+//			return false;
+
 		if (year % 4 == 0) {
 			if (year % 100 == 0) {
 				if (year % 400 == 0) {
@@ -32,11 +38,11 @@ public class LeapYear {
 				}
 				return false;
 			}
-			
+
 			return true;
 
 		} else {
-			
+
 			return false;
 		}
 	}
