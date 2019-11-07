@@ -20,25 +20,24 @@ public class Calendar {
 		int month = sc.nextInt();
 
 		int lastDayOfMonth;
-		if(month == 2 && isLeapYear(year))
+		if (month == 2 && isLeapYear(year))
 			lastDayOfMonth = 29;
 		else
 			lastDayOfMonth = arrayMonth[month - 1];
 
 		int DayOfWeek = getFirstDate(year, month) % 7 + 1;
 
-		
-		//출력
+		// 출력
 		System.out.println("일\t월\t화\t수\t목\t금\t토");
-		
+
 		for (int i = 1; i < DayOfWeek; i++) {
 			System.out.print("\t");
 		}
-		
-		for(int i = 0;i<lastDayOfMonth;i++) {
+
+		for (int i = 0; i < lastDayOfMonth; i++) {
 			System.out.print(i + 1 + "\t");
-			
-			if((i+DayOfWeek)%7 == 0)
+
+			if ((i + DayOfWeek) % 7 == 0)
 				System.out.println();
 		}
 
