@@ -4,9 +4,8 @@ import java.util.Arrays;
 
 public class MTest01 {
 
-	// Array : 여러개의 값을 효과적으로 관리하기 위한 객체
-	// 같은 타입
-
+	// Array : (같은 타입의)여러개의 값을 효과적으로 관리하기 위한 객체
+	
 	public static void main(String[] args) {
 		// 방법1
 		int[] a; // 선언
