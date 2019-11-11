@@ -41,8 +41,7 @@ public class MTest {
 //		 6. character 찾아서 대문자로 변환 후, 변환된 내용으로 전체 출력
 
 		System.out.println("6. character 찾아서 대문자로 변환 후, 변환된 내용으로 전체 출력");
-		str = str.replace("character",
-				str.substring(str.indexOf("character"), str.indexOf("character") + 9).toUpperCase());
+		str = str.replace("character", str.substring(str.indexOf("character"), str.indexOf("character") + 9).toUpperCase());
 		System.out.println(str);
 		System.out.println();
 		
