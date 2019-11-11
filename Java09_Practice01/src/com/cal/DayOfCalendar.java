@@ -7,11 +7,10 @@ public class DayOfCalendar {
 	/*
 	 * 연 월 일 입력하면 -> ?년 ?월 ?일은 ?요일 입니다. 출력
 	 * 
-	 * 윤년 계산
-	 * 일수 계산 (year, month) : int
-	 * 요일 : 1년 1월 1일 ~ year.month.day
+	 * 윤년 계산 일수 계산 (year, month) : int 요일 : 1년 1월 1일 ~ year.month.day
 	 */
 	private static int[] arrayMonth = new int[] { 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 };
+	private static char[] DayOfWeek = new char[] { '일', '월', '화', '수', '목', '금', '토' };
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
@@ -23,37 +22,30 @@ public class DayOfCalendar {
 
 		System.out
 				.println(year + "년 " + month + "월 " + date + "일은 " + getDay(getAllDate(year, month, date)) + "요일 입니다.");
+		System.out.println(
+				year + "년 " + month + "월 " + date + "일은 " + DayOfWeek[getAllDate(year, month, date) % 7] + "요일 입니다.");
 	}
 
 	public static String getDay(int allDate) {
-		String day = "";
 
 		switch (allDate % 7) {
 		case 0:
-			day = "일";
-			break;
+			return "일";
 		case 1:
-			day = "월";
-			break;
+			return "월";
 		case 2:
-			day = "화";
-			break;
+			return "화";
 		case 3:
-			day = "수";
-			break;
+			return "수";
 		case 4:
-			day = "목";
-			break;
+			return "목";
 		case 5:
-			day = "금";
-			break;
+			return "금";
 		case 6:
-			day = "토";
-			break;
-
+			return "토";
 		}
-
-		return day;
+		
+		return "";
 	}
 
 	public static int getAllDate(int year, int month, int date) {
@@ -88,6 +80,10 @@ public class DayOfCalendar {
 	public static boolean isLeapYear(int year) {
 		// 윤년이면 true
 		// 윤년아니면 false
+
+		// 윤년조건
+//		if ((year % 4 == 0) && (year % 100 != 0) || (year % 400 == 0)) {
+//		}
 
 		if (year % 4 == 0) {
 			if (year % 100 == 0) {

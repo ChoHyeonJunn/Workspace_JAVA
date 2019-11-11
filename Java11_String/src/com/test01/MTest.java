@@ -45,6 +45,15 @@ public class MTest {
 		System.out.println(str);
 		System.out.println();
 		
+		//이렇게 풀수도 있다!!
+//		String target = "character";
+//		int start = str.indexOf(target);
+//		int end = start + target.length();
+//		
+//		String upper = str.substring(start, end).toUpperCase();
+//		
+//		System.out.println(str.replace(target, upper));
+		
 //		 7. str을 char[] 로 출력하되, 'c' 만 출력하자. 그리고 c의 갯수도 출력하자
 
 		System.out.println("7. str을 char[] 로 출력하되, 'c' 만 출력하자. 그리고 c의 갯수도 출력하자");
@@ -77,6 +86,7 @@ public class MTest {
 
 		System.out.println("9. str 안의 모든 공백 제거 후 출력");
 		str = str.replace(" ", "");
+		//str.replaceAll(" ", "");	// regex 를 이용해 자를수도 있다. (replace랑 차이점)
 		System.out.println(str);
 		System.out.println();
 		
