@@ -14,8 +14,6 @@ public class MethodTest03 {
 		methodtest01.nonStaticMethod();
 		
 		//UML : Unified Modeling language
-		//http://www.objectaid.com/update/current 에서 다운받았다~
-		
-		
+		//http://www.objectaid.com/update/current 에서 다운받았다~		
 	}
 }
