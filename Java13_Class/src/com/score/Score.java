@@ -75,6 +75,7 @@ public class Score {
 		}
 	}
 
+	//Object.class의 toString 을 오버라이딩
 	@Override
 	public String toString() {
 		return "이름 : " + name + " 국어 : " + kor + " 영어 : " + eng + " 수학 : " + math + " 총점 : " + getSum() + " 평균 : "
