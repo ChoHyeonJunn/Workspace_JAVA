@@ -28,14 +28,8 @@ public class Type05 {
 		System.out.println("int의 범위 : " + Integer.MIN_VALUE + " ~ " + Integer.MAX_VALUE);
 		System.out.println("long의 범위 : " + Long.MIN_VALUE + " ~ " + Long.MAX_VALUE);		
 		System.out.println("float의 범위 : " + Float.MIN_VALUE + " ~ " + Float.MAX_VALUE);
-		System.out.println("double의 범위 : " + Double.MIN_VALUE + " ~ " + Double.MAX_VALUE);
-
-		
-		
-		
-		
-		System.out.println("character의 크기 : " + Character.SIZE);
-		
+		System.out.println("double의 범위 : " + Double.MIN_VALUE + " ~ " + Double.MAX_VALUE);		
+		System.out.println("character의 크기 : " + Character.SIZE);		
 		System.out.println("boolean의 범위? : " + Boolean.TRUE + " ~ " + Boolean.FALSE);
 		
 	}
