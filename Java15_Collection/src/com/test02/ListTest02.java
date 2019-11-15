@@ -39,7 +39,7 @@ class MySortTest implements Comparator<String> {
 //		else
 //			return 0;
 		
-		return -1;
+		return -1;	//그냥 들어온 순서 반대로 출력!
 	}
 
 }
