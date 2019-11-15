@@ -9,6 +9,7 @@ package com.singleton;
  * 
  * 
  */
+//https://jeong-pro.tistory.com/86
 public class Singleton {
 
 	// 2. 객체의 주소값을 확인할 변수를 static으로 선언!

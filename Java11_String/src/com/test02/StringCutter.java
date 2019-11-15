@@ -23,5 +23,7 @@ public class StringCutter {
 			System.out.println(st.countTokens());
 			System.out.println(st.nextElement());
 		}
+		
+		
 	}
 }
