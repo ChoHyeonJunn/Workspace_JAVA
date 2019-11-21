@@ -42,18 +42,12 @@ public class HiServer {
 				
 				String inputLine;
 				while((inputLine = in.readLine()) != null) {
-					System.out.println("client가 보낸 메세지 : " + inputLine);
-					
-					BufferedReader stdin = new BufferedReader(new InputStreamReader(System.in));
-					
-					String sevLine;
-					while ((sevLine = stdin.readLine()) != null) {
-						out.println(sevLine);
-					}
-					
+					System.out.println("client가 보낸 메세지 : " + inputLine);					
 					
 					out.println("*" + inputLine);
 				}
+				
+				
 				
 				out.close();
 				in.close();

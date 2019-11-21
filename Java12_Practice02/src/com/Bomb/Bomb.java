@@ -32,22 +32,36 @@ public class Bomb {
 
 		getBomb(Map, Bomb);
 
+
+		getDamage(Map, Bomb);
+
+
+		
+		print(Map, Bomb);
+	}
+
+	
+	
+	private static void print(int[][] map, int[][] bomb) {
+		
 		for (int i = 0; i < N; i++) {
 			for (int j = 0; j < N; j++) {
-				System.out.print(Bomb[i][j] + " ");
+				System.out.print(bomb[i][j] + " ");
 			}
 			System.out.println();
 		}
 		System.out.println();
-		getDamage(Map, Bomb);
-
+		
+		
 		for (int i = 0; i < N; i++) {
 			for (int j = 0; j < N; j++) {
-				System.out.print(Map[i][j] + " ");
+				System.out.print(map[i][j] + " ");
 			}
 			System.out.println();
 		}
 	}
+
+
 
 	private static void getDamage(int[][] map, int[][] bomb) {
 
