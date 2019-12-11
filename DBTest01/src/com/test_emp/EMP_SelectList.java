@@ -1,4 +1,4 @@
-package com.test01;
+package com.test_emp;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -6,7 +6,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 
-public class DB01 {
+public class EMP_SelectList {
 
 	// J DB C
 	// 1. Driver 연결
@@ -25,10 +25,11 @@ public class DB01 {
 		
 		
 		// 2. 계정 연결
+		//Data Source Explorer - Database Connections - My Oracle - properties - Driver Properties - Connection URL
 		String url = "jdbc:oracle:thin:@localhost:1521:xe";
 		String user = "kh";
 		String password = "kh";
-		//Data Source Explorer - Database Connections - My Oracle - properties - Driver Properties - Connection URL
+		
 		Connection con = DriverManager.getConnection(url, user, password);
 
 		

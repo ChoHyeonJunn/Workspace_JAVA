@@ -1,4 +1,4 @@
-package com.test01;
+package com.test_jdbctest;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -6,7 +6,7 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.Scanner;
 
-public class DB03 {
+public class JDBCTEST_Insert {
 
 	public static void main(String[] args) throws ClassNotFoundException, SQLException {
 		// 1. 드라이버 연결
