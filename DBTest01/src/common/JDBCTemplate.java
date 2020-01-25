@@ -2,7 +2,6 @@ package common;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
-import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
@@ -45,7 +44,8 @@ public class JDBCTemplate {
 
 		return con;
 	}
-
+	
+	// 5. DB 종료
 	public static void close(ResultSet rs) {
 		try {
 			rs.close();
@@ -55,6 +55,7 @@ public class JDBCTemplate {
 		}
 	}
 
+	// 5. DB 종료
 	public static void close(Statement stmt) {
 		try {
 			stmt.close();
@@ -64,6 +65,7 @@ public class JDBCTemplate {
 		}
 	}
 
+	// 5. DB 종료
 	public static void close(Connection con) {
 		try {
 			con.close();

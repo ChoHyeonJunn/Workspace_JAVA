@@ -34,13 +34,13 @@ public class JDBCTEST_Update extends JDBCTemplate {
 			pstmt.setString(1, name);
 			pstmt.setString(2, nickName);
 			pstmt.setInt(3, no);
-			
+
 			res = pstmt.executeUpdate();
-			
-			if(res > 0) {
+
+			if (res > 0) {
 				System.out.println("Update ¼º°ø!!");
 				commit(con);
-			}else {
+			} else {
 				System.out.println("0 rows updated;;;");
 			}
 
